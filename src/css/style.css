@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+body {
+  background-color: #fff;
+  font-family: 'robotoregular';
+}
+
+.button {
+  font-size: 14px;
+  border: none;
+  background-color: #ff9d00;
+  padding: 13px 22px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-color: #ffb133;
+}
+
+.button img {
+  vertical-align: middle;
+}
+
+.button-big {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-contacts__phone {
+  font-size: 22px;
+  margin-right: 13px;
+  font-family: 'robotomedium';
+}
+
+.header-contacts__phone:first-child {
+  border-right: 1px solid #cfcfd0;
+  padding-right: 13px;
+}
+
+.main {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 60px;
+  background: #373737 url("../img/main-bg.jpg") center no-repeat;
+  background-size: cover;
+  color: #fff;
+  z-index: 1;
+  /* Оформление картинки с коробками */
+}
+
+.main::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.main-img {
+  position: relative;
+}
+
+.main-img::before {
+  content: '';
+  position: absolute;
+  width: 390px;
+  height: 390px;
+  left: 50%;
+  margin-left: -195px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.main-text__title {
+  font-family: 'robotobold';
+  font-size: 41px;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+
+.main-text__subtitle {
+  font-family: 'robotoregular';
+  font-size: 28px;
+  margin-bottom: 27px;
+}
+
+.main-text__form {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 30px 27px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.form-title {
+  padding-right: 87px;
+  font-size: 20px;
+  font-family: 'robotolight';
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.form-title__important {
+  font-family: 'robotobold';
+  text-transform: uppercase;
+}
+
+.form__input {
+  margin-right: 10px;
+  padding: 20px;
+  border-radius: 4px;
+  border: none;
+  vertical-align: middle;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.form-small {
+  font-size: 14px;
+  font-family: 'robotolight';
+}

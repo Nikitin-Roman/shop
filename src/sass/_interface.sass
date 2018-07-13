@@ -1,0 +1,24 @@
+.button
+	font-size: 14px
+	border: none
+	background-color: $active-color
+	padding: 13px 22px
+	color: $text-color-light
+	border-radius: 5px
+	cursor: pointer
+	&:focus
+		outline: none
+	&:hover
+		background-color: lighten($active-color, 10)
+	img
+		vertical-align: middle
+	&-big
+		padding-top: 18px
+		padding-bottom: 18px
+		vertical-align: middle
+img
+	max-width: 100%
+body
+	margin: 0
+input:focus
+	outline: none
